@@ -1,0 +1,19 @@
+/* Estilo do cabeçalho */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #f8f8f8;
+}
+
+.backArrow {
+  margin-right: 16px;
+  font-size: 20px;
+  color: #ff6b35; /* Cor opcional */
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6b35;
+}
