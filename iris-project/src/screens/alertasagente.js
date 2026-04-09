@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { Ionicons, Feather } from '@expo/vector-icons'; 
 
-export default function App() {
+export default function AlertasAgente() {
   const [confirmado, setConfirmado] = useState(null);
   const [activeTab, setActiveTab] = useState('alerts'); // Alterado para alerts para teste
 

@@ -1,15 +1,16 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { AlertasAgente } from '../iris-project/src/screens/alertasagente';
-import { VisitaAgente } from '../iris-project/src/screens/visitaagente';
 
-function App() {
+// O caminho correto quando o App.js já está na pasta src:
+import AlertasAgente from './screens/alertasagente';
+import VisitaAgente from './screens/visitaagente';
+
+export default function App() {
   return (
-  <View style={styles.container}>
-    {/* Para ver a tela de Visitas, é só comentar a de Alertas e tirar o comentário da de Visita */}
-    <AlertasAgente /> 
-    {/* <VisitaAgente /> */}
-  </View>
+    <View style={styles.container}>
+      <AlertasAgente /> 
+      {/* <VisitaAgente /> */}
+    </View>
   );
 }
 
@@ -19,5 +20,3 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 });
-
-export default App;
