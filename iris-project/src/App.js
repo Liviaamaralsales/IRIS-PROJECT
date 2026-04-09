@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { AlertasAgente } from '../iris-project/src/screens/alertasagente';
+import { VisitaAgente } from '../iris-project/src/screens/visitaagente';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <View style={styles.container}>
+    {/* Para ver a tela de Visitas, é só comentar a de Alertas e tirar o comentário da de Visita */}
+    <AlertasAgente /> 
+    {/* <VisitaAgente /> */}
+  </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+});
 
 export default App;
