@@ -1,0 +1,26 @@
+/* Estilo do cartão de perfil */
+.profileCard {
+  display: flex;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.description h2 {
+  color: #333;
+  font-size: 18px;
+}
+
+.description p {
+  color: #666;
+  font-size: 14px;
+}
