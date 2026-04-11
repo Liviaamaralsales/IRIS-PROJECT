@@ -1,37 +1,15 @@
-// import React from 'react';
-// import { StatusBar } from 'expo-status-bar';
-// import { StyleSheet, View } from 'react-native';
-// import Denuncia from './src/screens/denuncia'; 
-// export default function App() {
-//   return (
-//     <View style={styles.container}>
-//       <StatusBar style="auto" />
-//       <Denuncia />
-//     </View>
-//   );
-// }
+import React from "react";
+import { View, StyleSheet } from "react-native";
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//   },
-// });
-
-
-
-
-
-
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import Mapa from './src/screens/mapa'; 
-import MarcarVisita from './src/screens/marcarvisita'; 
+// Importando as duas telas (deixei o Login aqui caso você queira trocar depois)
+// import Login from "./src/screens/Login";
+import Cadastro from "./src/screens/Cadastro";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <MarcarVisita /> 
+      {/* Alterado para renderizar a tela de Cadastro */}
+      <Cadastro />
     </View>
   );
 }
@@ -39,25 +17,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
 });
-
-// import React from 'react';
-// import { View, StyleSheet } from 'react-native';
-// import Mapa from './src/screens/mapa'; 
-
-// export default function App() {
-//   return (
-//     <View style={styles.container}>
-//       <Mapa />
-//     </View>
-//   );
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//   },
-// });
